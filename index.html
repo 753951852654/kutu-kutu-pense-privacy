@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="KUTU KUTU PENSE gizlilik politikası. Geliştirici: KzMcNr.">
+<title>KUTU KUTU PENSE — Gizlilik Politikası</title>
+<style>
+:root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1b2738; background: #f5f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 1rem; line-height: 1.75; }
+main { max-width: 54rem; margin: 2rem auto; padding: clamp(1rem, 4vw, 3rem); background: #fff; border: 1px solid #d9e1ec; border-top: 4px solid #a27418; border-radius: 12px; }
+h1, h2 { color: #14223a; line-height: 1.3; }
+h1 { margin: 0 0 1.5rem; font-size: clamp(1.6rem, 5vw, 2.35rem); }
+h2 { margin: 2.25rem 0 1rem; font-size: 1.3rem; }
+p { margin: 1rem 0; }
+article { overflow-wrap: anywhere; }
+a { color: #164fa1; text-decoration: underline; text-underline-offset: .2em; }
+a:hover { color: #11376f; }
+a:focus-visible, main:focus-visible { outline: 3px solid #164fa1; outline-offset: 4px; }
+code { padding: .1em .3em; border-radius: 4px; color: #273651; background: #edf1f6; font-size: .95em; }
+.skip-link { position: absolute; top: -10rem; left: 1rem; padding: .65rem 1rem; color: #fff; background: #14223a; z-index: 1; }
+.skip-link:focus { top: 1rem; }
+@media (max-width: 58rem) { main { margin: 1rem; } }
+@media print { :root { background: #fff; } main { max-width: none; margin: 0; padding: 0; border: 0; } .skip-link { display: none; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#policy-content">Politika metnine geç</a>
+<main id="policy-content" tabindex="-1">
+<article aria-label="Gizlilik politikası">
+<h1>KUTU KUTU PENSE — Gizlilik Politikası</h1>
+<p>Son güncelleme: 14 Kasım 2026. Uygulama sürümü: 1.0.0. Geliştirici: KzMcNr. Android uygulama kimliği: com.kutukutupense.game.</p>
+<p>İletişim e-postası: <a href="mailto:kzmcnr.support@gmail.com">kzmcnr.support@gmail.com</a>.</p>
+<h2>Oyunun kapsamı</h2>
+<p>KUTU KUTU PENSE, tek oyunculu bir kutu seçme ve karar oyunudur. İlk sürüm ücretsiz ve reklamsızdır; uygulama içi satın alma veya ücretli özellik içermez. Ekrandaki TL tutarları sanal oyun değerleridir. Gerçek para yatırma, çekme, ödeme veya gerçek para ödülü verme işlevi bulunmaz. Kullanıcı hesabı açmanız istenmez.</p>
+<h2>Cihazda tutulan bilgiler</h2>
+<p>Oyuna kaldığınız yerden devam edebilmeniz için kutuların ödül dağılımı, seçilen ve açılan kutular, tur, banka teklifleri, karar aşaması ve süresi, final seçimi, istatistik görüntüleme hakkı, yerel oyun kimliği ve kayıt zamanları saklanır. Tamamlanan son beş oyunun tarihleri ve kutu-ödül eşleşmeleri ile ses tercihi de saklanır. Yerel oyun kimliği reklam kimliği veya cihazlar arasında takip kimliği olarak kullanılmaz.</p>
+<p>Android sürümünde Capacitor Preferences, uygulamanın özel SharedPreferences alanını kullanır. Önceki sürümlerden kalan localStorage kayıtları ilk geçişte silinmez; geçişten sonra güncel kaydın yerine otomatik olarak geri yüklenmez. Tarayıcı sürümünde kayıtlar localStorage içinde tutulur. Android'deki geçiş ve kurtarma bilgileri, kayıt tutarlılığını sağlamak amacıyla cihazda saklanır.</p>
+<h2>Veri iletimi ve üçüncü taraf bileşenler</h2>
+<p>İncelenen uygulama sürümünde oyun kayıtlarını geliştiricinin sunucusuna gönderen bir işlev bulunmamaktadır. Reklam, analitik, kullanıcı takibi veya uzaktan hata raporlama SDK'sı kullanılmamaktadır. Ad, e-posta, konum, rehber, kamera veya mikrofon verisi oyun tarafından istenmez. Sesler Web Audio API ile üretilir; mikrofon kaydı yapılmaz. Telefon araması görünümü yalnızca oyun efektidir ve gerçek arama yapmaz.</p>
+<p>Next.js, React, Capacitor, Capacitor Preferences ve AndroidX gibi teknik bileşenler kullanılır. Oyun dosyaları, görseller ve derlenmiş fontlar Android paketine dahil edilir. INTERNET izni bulunması, kendi başına veri gönderildiği anlamına gelmez. İncelenen oyun kodunda uzak oyun sunucusu, reklam veya analitik uç noktası bulunmamıştır.</p>
+<p><strong>Android sistem yedeklemesi ayrı bir durumdur:</strong> Mevcut uygulamada <code>allowBackup=true</code> ayarı vardır. Cihazın, işletim sisteminin ve kullanıcının yedekleme tercihlerine bağlı olarak uygulama verileri sistemin bulut yedeğine dahil edilebilir veya başka bir cihaza aktarılabilir. Bu, geliştiricinin kendi oyun sunucusuna kayıt gönderimi değildir; sistem yedeği ve geri yükleme işlemleri ilgili hizmetin kurallarına tabidir. Bu nedenle kayıtların her koşulda yalnızca tek cihazda kalacağı söylenemez. Android/WebView ve sistem font hizmetleri de kendi sistem işlevlerini uygulayabilir.</p>
+<p>Google Play'in uygulama dağıtımı ve isteğe bağlı sistem tanılama/yedekleme hizmetleri kendi politikalarına tabidir. Gizlilik politikasının web sayfasını ziyaret etmeniz, oyunun yerel kayıtlarından ayrı bir işlemdir. Sayfanın barındırma hizmeti, sayfayı sunmak ve hizmet güvenliğini sağlamak için bağlantı bilgilerini kendi koşulları kapsamında işleyebilir. Bu sayfaya geliştirici tarafından analitik, reklam, izleme kodu veya üçüncü taraf font eklenmemiştir.</p>
+<p>Bu politika GitHub Pages üzerinden sunulduğunda GitHub, sayfa ziyaretçilerinin IP adreslerini güvenlik amacıyla kaydedebilir. Bu barındırma işlemi oyunun yerel kayıtlarının geliştiriciye gönderilmesi anlamına gelmez. Ayrıntılar <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Gizlilik Bildirimi</a> kapsamında açıklanır.</p>
+<h2>Saklama, silme ve güvenlik</h2>
+<p>Aktif oyun tamamlandığında aktif kayıt temizlenir; tamamlanan oyunların görünür geçmişi son beş kayıtla sınırlandırılır. Kurtarma günlüğü ve eski geçiş kopyaları nedeniyle bu işlem tüm depolama alanlarında adli anlamda anında silme garantisi değildir. Ses tercihi daha sonra da hatırlanır.</p>
+<p>Android ayarlarından uygulama verilerini temizlemek yerel uygulama kayıtlarını siler; bu işlem geri alınamayabilir. Sistem yedeklerinin yönetimi ve geri yüklenmesi Android hesabı/cihaz ayarlarına bağlıdır. Tarayıcı sürümünün kayıtları ilgili sitenin tarayıcı verileri temizlenerek silinebilir. Geliştirici cihazınızda tutulan oyun kayıtlarına uzaktan erişemez ve bu kayıtları uzaktan silemez.</p>
+<p>Kayıtlar Android uygulama alanı ve işletim sistemi korumalarıyla saklanır. Preferences ve localStorage, uygulama tarafından ayrıca şifrelenmiş bir kasa olarak sunulmaz. Ani kapanma veya güç kaybında sıfır veri kaybı garantisi verilmez.</p>
+<h2>Destek yazışmaları ve kullanıcı talepleri</h2>
+<p>Destek veya gizlilik sorularınızı kendi isteğinizle e-postayla iletirseniz, gönderen e-posta adresiniz, mesajlarınız, yanıtlar ve ekler Gmail üzerinden destek talebinizi değerlendirmek ve yanıtlamak amacıyla işlenir. Bu, oyunun otomatik olarak oyun kaydı veya cihaz verisi göndermesinden ayrı bir iletişimdir. Talebinizin yanıtlanması için gerekli olmayan kişisel bilgileri veya şifreleri göndermeyin. Geliştirici tarafında destek yazışmalarına erişim yalnızca yetkili geliştiriciyle sınırlıdır. Gmail hizmetinin teknik işleyişi ve hizmet sağlayıcının veri işlemesi Google'ın ilgili hizmet ve gizlilik koşullarına tabidir.</p>
+<p>Kapanan destek yazışmaları normal koşullarda talebin kapanış tarihinden itibaren 12 ay saklanır; bu sürenin sonunda geliştiricinin kontrolündeki kopyalar silinir. Açık talepler, talebin karşılanması için gerekli olduğu sürece tutulur. Yürürlükteki yasal saklama yükümlülükleri nedeniyle daha uzun süre tutulması gereken kayıtlar, bu yükümlülüğün gerektirdiği kapsam ve süreyle sınırlı olarak saklanır.</p>
+<p>Destek yazışmalarınıza erişim, yanlış bilgilerin düzeltilmesi veya silme taleplerinizi <a href="mailto:kzmcnr.support@gmail.com">kzmcnr.support@gmail.com</a> adresine gönderebilirsiniz. İlgili yazışmayı veya talebi belirtmeniz yeterlidir; gereksiz kimlik belgesi istenmez. Uygun olduğunda doğrulama, ilgili yazışmanın yapıldığı e-posta adresinden başvurmanız ve o adres üzerinden yanıtlaşma yoluyla yapılır. Başka bir adresle başvuru yapılması gibi durumlarda yalnızca gerekli ve ölçülü ek doğrulama istenir.</p>
+<p>Talepler mümkün olduğunca 30 gün içinde sonuçlandırılır; yürürlükteki yasal süreler saklıdır. Ek bilgi gerekiyorsa veya talep tamamen karşılanamıyorsa, gerekçesi ve yapılabilecek işlemler kullanıcıya açıklanır. Yasal saklama yükümlülüğü bulunan bilgiler, yükümlülüğün gerektirdiği süre dolmadan silinemeyebilir.</p>
+<p>Silme işlemi geliştiricinin kontrolündeki ilgili gelen mesajları, arşiv ve gönderilmiş yanıtları, ekleri ve varsa ayrıca indirilmiş kopyaları kapsar. Gmail'de otomatik silme yapıldığı veya bütün kopyaların anında ve kesin olarak yok edildiği taahhüt edilmez. Hizmet sağlayıcının çöp kutusu, yedekleme, güvenlik ve yasal saklama süreçleri kendi kuralları ve teknik sınırları kapsamında işler; geliştirici bu sistemlerdeki tüm kopyaların silinme zamanını garanti edemez. Kullanıcının kendi posta kutusundaki kopyalar geliştiricinin kontrolünde değildir. Destek yazışmasının silinmesi, cihazdaki oyun kayıtlarını veya Android sistem yedeklerini uzaktan silmez.</p>
+<h2>Değişiklikler ve iletişim</h2>
+<p>Veri işleme biçimi değişirse bu politika ve ilgili Google Play beyanları güncellenir. Geliştirici: <strong>KzMcNr</strong>. Destek ve gizlilik iletişimi: <a href="mailto:kzmcnr.support@gmail.com">kzmcnr.support@gmail.com</a>.</p>
+</article>
+</main>
+</body>
+</html>
